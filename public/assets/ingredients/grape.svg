@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 140">
+  <defs>
+    <radialGradient id="grape" cx="36%" cy="28%" r="68%">
+      <stop offset="0" stop-color="#f2b4ea"/>
+      <stop offset=".55" stop-color="#8e438d"/>
+      <stop offset="1" stop-color="#4b2254"/>
+    </radialGradient>
+  </defs>
+  <path d="M92 22c17-20 33-10 42 2-16 6-28 9-42-2Z" fill="#71a64f"/>
+  <path d="M86 34c10-8 18-18 22-31" fill="none" stroke="#765c30" stroke-width="5" stroke-linecap="round"/>
+  <g fill="url(#grape)" stroke="#6b2b71" stroke-width="2">
+    <circle cx="74" cy="45" r="15"/><circle cx="95" cy="47" r="15"/><circle cx="62" cy="67" r="15"/>
+    <circle cx="84" cy="68" r="16"/><circle cx="106" cy="69" r="15"/><circle cx="73" cy="91" r="15"/>
+    <circle cx="96" cy="93" r="16"/><circle cx="84" cy="115" r="14"/>
+  </g>
+  <g fill="#ffd7ff" opacity=".48">
+    <circle cx="69" cy="39" r="4"/><circle cx="91" cy="62" r="4"/><circle cx="100" cy="88" r="4"/>
+  </g>
+</svg>

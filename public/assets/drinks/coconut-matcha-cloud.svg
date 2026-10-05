@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 260">
+  <defs>
+    <linearGradient id="tea" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#cae778"/>
+      <stop offset=".48" stop-color="#83ad36"/>
+      <stop offset="1" stop-color="#496c28"/>
+    </linearGradient>
+    <linearGradient id="cupGlass" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".24"/>
+      <stop offset=".5" stop-color="#ffffff" stop-opacity=".68"/>
+      <stop offset="1" stop-color="#dce6e2" stop-opacity=".26"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="75" cy="32" rx="58" ry="16" fill="#f8fbfa" stroke="#cfd7d4" stroke-width="4"/>
+  <path d="M25 42h100l-15 185c-2 20-68 20-70 0L25 42Z" fill="url(#tea)"/>
+  <path d="M37 55c23 18 57-4 78 13l-4 48c-21-16-54 8-78-9Z" fill="#f7f2d7" opacity=".7"/>
+  <path d="M33 126c24 16 55-10 83 7l-4 48c-27-15-53 8-83-8Z" fill="#edf8cb" opacity=".58"/>
+  <path d="M22 33h106L111 228c-2 19-70 19-72 0L22 33Z" fill="url(#cupGlass)" stroke="#cbd3d1" stroke-width="4"/>
+  <g fill="#2f3326" opacity=".82">
+    <circle cx="51" cy="193" r="6"/><circle cx="67" cy="194" r="6"/><circle cx="84" cy="192" r="6"/><circle cx="100" cy="194" r="6"/>
+    <circle cx="58" cy="211" r="6"/><circle cx="76" cy="213" r="6"/><circle cx="94" cy="211" r="6"/>
+  </g>
+  <path d="M45 24c6-31 62-31 67 4 16 7 23 27 7 37-19 12-71 11-91-1-15-10-3-32 17-40Z" fill="#dff0a6"/>
+  <path d="M48 32c18 7 40 7 61 0" stroke="#f8fff0" stroke-width="8" stroke-linecap="round" opacity=".75"/>
+  <path d="M46 64c20 9 45 10 69 2" stroke="#6e9832" stroke-width="5" stroke-linecap="round" opacity=".45"/>
+</svg>
