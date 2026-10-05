@@ -15,6 +15,7 @@ const machineSlotWindows = [
   { left: 180, top: 37, width: 69, height: 119 },
   { left: 251, top: 37, width: 69, height: 119 },
 ];
+const assetPath = (path: string) => `${import.meta.env.BASE_URL}${path}`;
 
 function pickRecipeGroup() {
   return recipeGroups[Math.floor(Math.random() * recipeGroups.length)];
@@ -123,7 +124,7 @@ export function LotteryDrinkPage() {
                     >
                       <motion.img
                         className="ganzi-ball-part"
-                        src="/assets/machine/ganzi-ball.svg"
+                        src={assetPath('assets/machine/ganzi-ball.svg')}
                         alt=""
                         draggable={false}
                         animate={
@@ -135,7 +136,7 @@ export function LotteryDrinkPage() {
                       />
                       <motion.img
                         className="ganzi-stick-part"
-                        src="/assets/machine/ganzi-stick.svg"
+                        src={assetPath('assets/machine/ganzi-stick.svg')}
                         alt=""
                         draggable={false}
                         animate={
@@ -145,7 +146,7 @@ export function LotteryDrinkPage() {
                         }
                         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                       />
-                      <img className="ganzi-base-part" src="/assets/machine/ganzi-base.svg" alt="" draggable={false} />
+                      <img className="ganzi-base-part" src={assetPath('assets/machine/ganzi-base.svg')} alt="" draggable={false} />
                     </motion.div>
                     <AnimatePresence>
                       {gameState === 'failed' && (
@@ -193,7 +194,7 @@ export function LotteryDrinkPage() {
                     </div>
                     <img
                       className="machine-body-image"
-                      src="/assets/machine/machine-body-cutout.png"
+                      src={assetPath('assets/machine/machine-body-cutout.png')}
                       alt="Drink lottery machine"
                       draggable={false}
                     />

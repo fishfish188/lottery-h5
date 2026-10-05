@@ -16,6 +16,7 @@ export type RecipeGroup = {
   };
 };
 
+const withBasePath = (path: string) => `${import.meta.env.BASE_URL}${path.slice(1)}`;
 const containerImage = '/assets/container/empty-bottle.png';
 
 export const recipeGroups: RecipeGroup[] = [
@@ -179,6 +180,11 @@ export const recipeGroups: RecipeGroup[] = [
       image: '/assets/drinks/group-10-drink.png',
     },
   },
-];
+].map((group) => ({
+  ...group,
+  containerImage: withBasePath(group.containerImage),
+  ingredients: group.ingredients.map((ingredient) => ({ ...ingredient, image: withBasePath(ingredient.image) })),
+  resultDrink: { ...group.resultDrink, image: withBasePath(group.resultDrink.image) },
+}));
 
 export const rollingPool: Ingredient[] = recipeGroups.flatMap((group) => group.ingredients);
